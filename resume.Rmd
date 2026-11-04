@@ -1,0 +1,59 @@
+---
+title: "Resume"
+output: html_document
+---
+
+## Education
+
+**Master of Science in Biostatistics, Public Health Data Science Track** | Sep 2026 – May 2028  
+Columbia University Mailman School of Public Health
+
+- Relevant coursework: Data Science, Biostatistical Methods, Principles of Epidemiology, Relational Databases & SQL
+
+**Bachelor of Technology in Biotechnology** | Sep 2022 – May 2026  
+Vellore Institute of Technology, Vellore
+
+- CGPA: 3.87 / 4.0
+- Relevant coursework: Bioinformatics, Genomics & Proteomics, Probability & Statistics, Genetic Engineering, Calculus
+
+## Experience
+
+### Research Assistant, Koita Centre for Digital Health, Ashoka University
+*Dec 2025 – June 2026*
+
+- Designed and ran a simulation study testing whether the order of quality control (QC) steps changes Genome Wide Association Study (GWAS) results. Generated synthetic datasets of 75,000 individuals and ~110,000 SNPs using msprime in R, scripted six QC pipelines in PLINK via Bash, and compared them using SAIGE mixed-model regression across five independently simulated datasets. Reproducible code on [GitHub](http://github.com/sameerareem/).
+- Found that QC step order had a negligible effect on GWAS results (Lin's CCC 0.996–1.000), evaluated on genomic inflation, causal-variant recovery, and effect-size concordance.
+- Applied two-sample Mendelian Randomization, adapting published code, in an ongoing study of early-life infections and autoimmune disease risk, under Dr. Naveen Kumar Bhatraju.
+
+### Undergraduate Researcher, VIT University
+*Jan 2025 – April 2026 (Remote)*
+
+- First author on a review paper published in *Frontiers in Toxicology* (2026), under the guidance of Dr. Rahul Vashishth, leading methodology, original draft writing, and review and editing.
+- Conducted literature searches across PubMed, Scopus, and Web of Science, synthesizing molecular, cellular, and clinical evidence to identify research gaps.
+
+### Computerized Systems Validation Intern, Merck KGaA
+*July 2025 – Nov 2025*
+
+- Researched and presented "Use of AI in GxP environments" to the Head of GPS Applications, Compliance Excellence & Validation, explaining AI/ML feasibility in regulated pharmaceutical systems to a non-technical audience.
+- Validated GxP-regulated systems against GAMP 5 guidelines (FDA/EMA standards) and reviewed validation documentation in Veeva, ManGo, and ALM, flagging compliance gaps to support audit readiness.
+
+### Laboratory Intern, MIOT International Hospital
+*June 2025 – July 2025*
+
+- Supported quality-controlled data collection and result interpretation across Microbiology, Immunology, and Histopathology.
+
+### Team Manager, Riviera (VIT Annual Cultural Fest)
+*Jan 2025 – Feb 2025*
+
+- Led a team of ~20 for a campus festival and coordinated accommodation for 60+ national and international guests, working with college administration and vendors to resolve last-minute changes.
+
+### Summer Intern, LifeCell International
+*June 2024 – July 2024*
+
+- Supported genetic diagnostics (DNA isolation, Sanger sequencing, chromosomal microarray) and tissue processing.
+
+## Publications
+
+Imthiaz SR, Ray S, Francis GA, Vashishth R. The genotoxic burden of toxic metals: bridging molecular mechanisms, biomonitoring, and multidisciplinary interventions. *Frontiers in Toxicology*. 2026;8:1906308. [doi:10.3389/ftox.2026.1906308](https://doi.org/10.3389/ftox.2026.1906308)
+
+## Skills
