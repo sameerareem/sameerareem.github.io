@@ -3,5 +3,3 @@ title: "Sameera Reem"
 ---
 
 Hi, I'm Sameera, a grad student at Columbia University Mailman School of Public Health. I was originally born and brought up in India and moved to New York City recently. I love reading and exploring the city!
-
-[Resume](resume.html)

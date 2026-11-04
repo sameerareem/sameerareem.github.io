@@ -1,13 +1,16 @@
-name: "Yay internet!"
+name: "Sameera Reem"
 output_dir: "."
 navbar:
   title: "Home"
+  left:
+    - text: "Resume"
+      href: resume.html
   right:
-    - text: "About"
-      href: about.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:i.sameerareem@gmail.com
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/sameerareem/
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/sameera-reem-imthiaz/
 output:
   html_document

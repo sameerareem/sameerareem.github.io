@@ -1,6 +1,5 @@
 ---
 title: "Resume"
-output: html_document
 ---
 
 ## Education
@@ -55,5 +54,3 @@ Vellore Institute of Technology, Vellore
 ## Publications
 
 Imthiaz SR, Ray S, Francis GA, Vashishth R. The genotoxic burden of toxic metals: bridging molecular mechanisms, biomonitoring, and multidisciplinary interventions. *Frontiers in Toxicology*. 2026;8:1906308. [doi:10.3389/ftox.2026.1906308](https://doi.org/10.3389/ftox.2026.1906308)
-
-## Skills
