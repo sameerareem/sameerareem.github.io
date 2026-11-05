@@ -1,5 +1,63 @@
 ---
-title: "dashboard"
-output: html_document
+title: "Instacart dashboard"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
 ---
+
+```{r, message = FALSE}
+library(tidyverse)
+library(flexdashboard)
+library(plotly)
+library(p8105.datasets)
+
+data("instacart")
+```
+
+Column {data-width=550}
+-----------------------------------------------------------------------
+
+### Reorder rate vs. number of items ordered, by aisle
+
+```{r}
+instacart |>
+  group_by(aisle) |>
+  summarize(
+    n_items = n(),
+    prop_reordered = mean(reordered)) |>
+  mutate(text_label = str_c(aisle, "\nItems ordered: ", n_items)) |>
+  plot_ly(
+    x = ~n_items, y = ~prop_reordered, type = "scatter", mode = "markers",
+    text = ~text_label, alpha = 0.5) |>
+  layout(xaxis = list(title = "Number of items ordered"),
+         yaxis = list(title = "Proportion reordered"))
+```
+
+Column {data-width=450}
+-----------------------------------------------------------------------
+
+### Most popular aisles
+
+```{r}
+instacart |>
+  count(aisle) |>
+  filter(n > 30000) |>
+  mutate(aisle = fct_reorder(aisle, n)) |>
+  plot_ly(x = ~aisle, y = ~n, color = ~aisle, type = "bar", colors = "viridis") |>
+  layout(xaxis = list(title = "Aisle"),
+         yaxis = list(title = "Number of items ordered"))
+```
+
+### Proportion of items reordered by hour of day
+
+```{r}
+instacart |>
+  group_by(order_hour_of_day) |>
+  summarize(prop_reordered = mean(reordered)) |>
+  plot_ly(x = ~order_hour_of_day, y = ~prop_reordered,
+          type = "scatter", mode = "lines") |>
+  layout(xaxis = list(title = "Hour of day"),
+         yaxis = list(title = "Proportion reordered"))
+```
 
